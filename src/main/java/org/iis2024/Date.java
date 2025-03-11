@@ -30,6 +30,17 @@ public class Date {
   }
 
   /**
+ * Returns the date as a formatted string in the format dd/MM/yyyy.
+ *
+ * @return The formatted date string.
+ */
+public String getFormattedDate() {
+  // Ensure two digits for day and month and four digits for year.
+  return String.format("%02d/%02d/%04d", day, month, year);
+}
+
+
+  /**
    * Retrieves the month component of this date.
    *
    * @return The month of the year (1-12).
